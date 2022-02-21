@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cp4s-ibm-cp4s-operator
+spec:
+  destination:
+    namespace: cp4s
+    server: https://kubernetes.default.svc
+  project: 2-services
+  source:
+    path: payload/2-services/namespace/cp4s/ibm-cp4s-operator
+    repoURL: https://github.com/divyakamathorg/gitops-test-cp4s-all-4
+    targetRevision: main
+    helm:
+      releaseName: ibm-cp4s-operator
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+  ignoreDifferences: []
