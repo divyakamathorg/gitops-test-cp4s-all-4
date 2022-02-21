@@ -1,0 +1,6 @@
+"cp4s":
+  "catalogsource": "ibm-operator-catalog"
+  "catalogsource_namespace": "openshift-marketplace"
+  "cps_namespace": "cp4s"
+  "cps_platform_channel": "v1.9"
+
