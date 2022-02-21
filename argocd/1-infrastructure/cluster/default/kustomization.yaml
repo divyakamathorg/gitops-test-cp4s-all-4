@@ -4,3 +4,4 @@ resources:
   - base/cp4s-ibm-entitlement-key.yaml
   - base/namespace-cp4s.yaml
   - base/openshift-marketplace-ibm-catalogs.yaml
+  - base/openshift-marketplace-ibm-entitlement-key.yaml
